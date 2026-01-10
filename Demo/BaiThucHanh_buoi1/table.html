@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-radius: 10px;
+        }
+        table {
+            border-style: dashed;
+        }
+    </style>
+    <!--border-collapse: collapse; sử dụng khi muốn đường kẻ bảng chỉ có 1 
+        border-radius: 10px; bo viền bảng
+        border-style: dotted; khiến bảng trở thành dấu chấm
+        dotted: chấm
+        dashed: chấm dài
+        solid: đơn 
+        double: đôi
+        groove: rãnh
+        ridge: 
+        inset     
+        outset     
+        none     
+        hidden
+        -->
+</head>
+<body>
+<!-- 
+    thẻ <tr> tức là hàng trong bảng
+        <th> là nội dung trong bảng
+        <td> xác định một ô trong bảng
+        <caption> đề mục
+        <colgroup> định dạng bảng
+        <col> Chỉ định các thuộc tính cột cho từng cột trong một<colgroup> yếu tố
+        <thead> nhóm nội dung tiêu đề trong 1 bảng
+        <tbody> nhóm nội dung chính 
+        <tfoot> nhóm nội dung chân trang -->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;">
+            <col style="background-color: pink;">
+        </colgroup>
+        <tr>
+            <th>Trường</th>
+            <th>liên hệ</th>
+            <th>quê quán</th>
+        </tr>
+        <tr>
+            <th>Đại Học Mỏ Địa Chất</th>
+            <th>0383334906</th>
+            <th>Hà Nội</th>
+        </tr>
+        <tr>
+            <th>khoa cntt</th>
+            <th>2121051217@student.humg.edu.vn</th>
+            <th>Hà Đông</th>
+        </tr>
+    </table>
+</body>
+</html>

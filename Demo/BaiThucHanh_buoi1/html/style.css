@@ -1,0 +1,16 @@
+body {
+    background-color: aqua;
+    font-family: verdana;
+    font-size: 140%;
+}
+h1 {
+    color: red;
+    font-family: Verdana;
+    font-size: 120%;
+    padding: 20px 40px;
+    text-decoration: none;
+    display: inline-block;
+}
+p {
+    color: blanchedalmond;
+}
