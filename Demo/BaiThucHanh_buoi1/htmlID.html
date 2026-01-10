@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            background-color: aqua;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+        .khoa{
+            background-color: pink;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div><h1 id="header">TIÊU ĐỀ</h1></div>
+        <div class="khoa">
+        <h1>Khoa công nghệ thông tin</h1>
+        <h2>chuyên ngành Tin học kinh tế</h2>
+        <p>đang theo học</p>
+    </div>
+    <div class="khoa">
+        <h1>khoa công nghệ thông tin</h1>
+        <h2>chuyên ngành Mạng máy tính</h2>
+        <p>đang theo học</p>
+    </div>
+    <div class="khoa">
+        <h1>khoa tin học địa chất</h1>
+        <h2>địa chất học</h2>
+        <p>đang theo học</p>
+    </div>
+<!-- sự khác biệt giữa ID và CLASS 
+ class sẽ tác động vào toàn bộ lớp cùng tên
+ id chỉ tác động vào 1 element đó-->
+    <h1 id="myHeader">Xin Chao</h1>
+    <button onclick="displayResult()">Change text</button>
+
+    <script>
+        function displayResult() {
+        document.getElementById("myHeader").innerHTML = "Toy Yeu CNTT";
+        }
+    </script>
+</body>
+</html>

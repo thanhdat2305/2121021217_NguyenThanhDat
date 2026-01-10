@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .khoa{
+            background-color: red;
+            color: white;
+            text-decoration: none;
+        }
+        .chinh{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="khoa chinh">
+        <h1>Khoa công nghệ thông tin</h1>
+    </div>
+        <h2>chuyên ngành Tin học kinh tế</h2>
+        <p>đang theo học</p>
+    <div class="khoa">
+        <h1>khoa công nghệ thông tin</h1>
+    </div>
+        <h2>chuyên ngành Mạng máy tính</h2>
+        <p>đang theo học</p>
+    <div class="khoa">
+        <h1>khoa tin học địa chất</h1>
+    </div>
+        <h2>địa chất học</h2>
+        <p>đang theo học</p>
+
+    <h2>sử dụng javascript</h2>
+    <p>nhấn nút để ẩn những element có class name là city</p>
+
+    <button onclick="myFunction()">nhấn nút để ẩn </button>
+
+    <h2 class="city">Hà Nội</h2>
+    <p>Hà Nội là thủ đô của Việt Nam.</p>
+
+    <h2 class="city">Seoul</h2>
+    <p>Seoul là thủ đô của Hàn Quốc.</p>
+
+    <h2 class="city">BangKok</h2>
+    <p>BangKok là thủ đô của Thái Lan.</p>
+
+    <script>
+    function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
