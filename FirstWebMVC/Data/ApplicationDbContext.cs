@@ -1,5 +1,5 @@
+using DemoMVC.Models.Entities;
 using Microsoft.EntityFrameworkCore;
-using FirstWebMVC.Models;
 
 namespace FirstWebMVC.Data
 {
@@ -9,7 +9,7 @@ namespace FirstWebMVC.Data
             : base(options)
         {
         }
-
-        public DbSet<Product> Products { get; set; } 
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
