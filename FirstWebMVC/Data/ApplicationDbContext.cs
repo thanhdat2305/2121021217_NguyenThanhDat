@@ -1,5 +1,6 @@
-using DemoMVC.Models.Entities;
+using FirstWebMVC.Models.Entities;
 using Microsoft.EntityFrameworkCore;
+using FirstWebMVC.Models;
 
 namespace FirstWebMVC.Data
 {
