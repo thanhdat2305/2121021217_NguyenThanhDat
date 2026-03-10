@@ -1,5 +1,16 @@
+using Microsoft.EntityFrameworkCore;
+using FirstWebMVC.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// 1. Lấy chuỗi kết nối từ appsettings.json
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+// 2. Đăng ký DbContext vào hệ thống Dependency Injection
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString)); 
+
+// ... các cấu hình khác
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
